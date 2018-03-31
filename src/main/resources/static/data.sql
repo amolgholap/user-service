@@ -1,1 +1,1 @@
-create table user (id integer not null auto_increment, email varchar(255), first_name varchar(255), last_name varchar(255), primary key (id))
+create table user (id integer not null auto_increment, name varchar(255), name varchar(255), password varchar(255), mobile varchar(255), address varchar(255), sex varchar(255), designation varchar(255), date_of_joining date, rating int(1), primary key (id))

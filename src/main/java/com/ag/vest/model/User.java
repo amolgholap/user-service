@@ -1,5 +1,7 @@
 package com.ag.vest.model;
 
+import java.sql.Date;
+
 import javax.persistence.*;
 
 @Entity
@@ -11,11 +13,21 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @Column
-    private String firstName;
+    private String name;
     @Column
-    private String lastName;
+    private String password;
     @Column
-    private String email;
+    private String mobile;
+    @Column
+    private String address;
+    @Column
+    private String sex;
+    @Column
+    private String designation;
+    @Column
+    private Date dateOfJoining;
+    @Column
+    private String rating;
 
     public int getId() {
         return id;
@@ -25,27 +37,67 @@ public class User {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    public String getLastName() {
-        return lastName;
-    }
+	public String getPassword() {
+		return password;
+	}
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-    public String getEmail() {
-        return email;
-    }
+	public String getMobile() {
+		return mobile;
+	}
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+
+	public String getDesignation() {
+		return designation;
+	}
+
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
+
+	public Date getDateOfJoining() {
+		return dateOfJoining;
+	}
+
+	public void setDateOfJoining(Date dateOfJoining) {
+		this.dateOfJoining = dateOfJoining;
+	}
+
+	public String getRating() {
+		return rating;
+	}
+
+	public void setRating(String rating) {
+		this.rating = rating;
+	}
 }
